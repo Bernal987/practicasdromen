@@ -1,0 +1,9 @@
+uuid: a6dbc322-73aa-49b5-b034-0a7f99ed98d7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Categorías de evento'
+vid: categorias_de_evento
+description: 'Calificación de eventos'
+weight: 0
+new_revision: false

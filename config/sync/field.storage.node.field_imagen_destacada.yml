@@ -1,0 +1,20 @@
+uuid: fa1a118c-b4be-4e65-8747-9d867634fe05
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

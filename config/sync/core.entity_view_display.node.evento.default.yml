@@ -1,0 +1,70 @@
+uuid: 5fbc034b-e13d-4795-af70-2f2e45dcc93d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evento.field_categoria
+    - field.field.node.evento.field_destacado
+    - field.field.node.evento.field_fecha_de_fin
+    - field.field.node.evento.field_fecha_de_inicio
+    - field.field.node.evento.field_imagen_destacada
+    - node.type.evento
+  module:
+    - datetime
+    - user
+id: node.evento.default
+targetEntityType: node
+bundle: evento
+mode: default
+content:
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_destacado:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_fecha_de_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_fecha_de_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_imagen_destacada:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
