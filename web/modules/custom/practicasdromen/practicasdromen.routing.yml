@@ -1,0 +1,7 @@
+practicasdromen.hola:
+  path: '/hola'
+  defaults:
+    _controller: '\Drupal\practicasdromen\Controller\HolaController::content'
+    _title: 'Hola Mundo'
+  requirements:
+    _access: 'TRUE'

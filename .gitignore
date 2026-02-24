@@ -1,0 +1,7 @@
+/vendor/
+/web/core/
+/web/sites/*/files/
+/.ddev/
+/.idea/
+/node_modules/
+.env

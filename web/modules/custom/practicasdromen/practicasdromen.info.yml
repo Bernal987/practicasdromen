@@ -1,0 +1,5 @@
+name: Practicas Dromen
+type: module
+description: Mi primer modulo personalizado
+core_version_requirement: ^11
+package: Custom
