@@ -1,5 +1,5 @@
 uuid: 5ae02a76-5cfa-468e-8312-bb085caf96b4
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -20,7 +20,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Search help'
+  label: 'Buscar ayuda'
   label_display: visible
   provider: search
   page_id: help_search

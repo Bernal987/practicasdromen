@@ -1,9 +1,10 @@
 uuid: fd86149a-32a2-4492-93f8-221c773afe5f
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
     - comment
     - file
@@ -27,4 +28,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'use text format webform_default'
   - 'view media'

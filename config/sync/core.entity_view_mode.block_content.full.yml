@@ -1,5 +1,5 @@
 uuid: c7d32646-1c82-4e2b-aaed-c3b77158f429
-langcode: en
+langcode: es
 status: false
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Q7yUUYeRLByl-MCGveKKF_KhAtNICLCMJuKWfugCvso
 id: block_content.full
-label: Full
+label: Completo
 description: ''
 targetEntityType: block_content
 cache: true

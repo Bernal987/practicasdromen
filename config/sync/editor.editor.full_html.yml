@@ -1,5 +1,5 @@
 uuid: 7715c6a4-489f-4e83-8af8-24ea8f0b2946
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -38,7 +38,7 @@ settings:
     ckeditor5_codeBlock:
       languages:
         -
-          label: 'Plain text'
+          label: 'Texto sin formato'
           language: plaintext
         -
           label: C
@@ -53,7 +53,7 @@ settings:
           label: CSS
           language: css
         -
-          label: Diff
+          label: Diferencias
           language: diff
         -
           label: HTML
