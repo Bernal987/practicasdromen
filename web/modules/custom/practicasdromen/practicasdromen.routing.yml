@@ -1,7 +1,7 @@
-practicasdromen.hola:
-  path: '/hola'
+practicasdromen.gestion_eventos:
+  path: '/gestion-eventos'
   defaults:
-    _controller: '\Drupal\practicasdromen\Controller\HolaController::content'
-    _title: 'Hola Mundo'
+    _title: 'Gestión de eventos'
+    _controller: '\Drupal\practicasdromen\Controller\GestionEventosController::content'
   requirements:
-    _access: 'TRUE'
+    _permission: 'access content'

@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityStorageException;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function practicasdromen_entity_presave(EntityInterface $entity) {
+
+  // Solo aplicar a nodos del tipo "evento"
+  if ($entity->getEntityTypeId() === 'node' && $entity->bundle() === 'evento') {
+
+    $fecha_inicio = $entity->get('field_fecha_inicio')->value ?? NULL;
+    $fecha_fin = $entity->get('field_fecha_fin')->value ?? NULL;
+
+    if ($fecha_inicio && $fecha_fin && $fecha_fin < $fecha_inicio) {
+      throw new EntityStorageException('La fecha de fin no puede ser anterior a la fecha de inicio.');
+    }
+  }
+}
