@@ -1,3 +1,6 @@
 acceder a gestion de eventos:
   title: 'Acceder a la gestión de eventos'
   description: 'Permite acceder a funcionalidades especiales del módulo practicasdromen'
+administrar eventos:
+  title: 'Administrar eventos'
+  description: 'Permite gestionar los eventos del sitio'
