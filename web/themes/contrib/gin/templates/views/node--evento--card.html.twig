@@ -1,0 +1,19 @@
+<article class="evento-card {{ node.field_destacado.value ? 'evento-destacado' }}">
+
+  {% if content.field_imagen_destacada %}
+    <div class="evento-card-imagen">
+      {{ content.field_imagen_destacada }}
+    </div>
+  {% endif %}
+
+  <h2>{{ label }}</h2>
+
+  <div class="evento-card-fecha">
+    {{ content.field_fecha_inicio }}
+  </div>
+
+  <div class="evento-card-categoria">
+    {{ content.field_categoria }}
+  </div>
+
+</article>

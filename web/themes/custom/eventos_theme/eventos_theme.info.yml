@@ -1,0 +1,7 @@
+name: Eventos Theme
+type: theme
+description: Tema personalizado para eventos
+core_version_requirement: ^10
+base theme: stable9
+libraries:
+  - eventos_theme/global
