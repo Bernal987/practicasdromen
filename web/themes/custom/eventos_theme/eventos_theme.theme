@@ -1,0 +1,24 @@
+<?php
+
+function eventos_theme_preprocess_node(&$variables) {
+
+  // Comprobar si es un contenido del tipo "evento".
+  if ($variables['node']->bundle() == 'evento') {
+
+    // Comprobar si el campo destacado está activado.
+    if ($variables['node']->field_destacado->value) {
+
+      // Añadir clase CSS.
+      $variables['attributes']['class'][] = 'evento-destacado';
+    }
+  }
+
+}
+
+function eventos_theme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $node = $variables['elements']['#node'];
+
+  if ($node->bundle() == 'evento' && $node->field_destacado->value) {
+    $suggestions[] = 'node__evento__destacado';
+  }
+}
