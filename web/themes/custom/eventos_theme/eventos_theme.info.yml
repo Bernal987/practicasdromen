@@ -1,7 +1,7 @@
 name: Eventos Theme
 type: theme
 description: Tema custom para eventos
-base theme: stable9
+base theme: stark
 core_version_requirement: ^10 || ^11
 
 libraries:

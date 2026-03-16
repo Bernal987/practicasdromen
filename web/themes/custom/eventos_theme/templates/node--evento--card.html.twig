@@ -1,4 +1,4 @@
-<article class="bg-white rounded-lg shadow-md overflow-hidden p-4">
+<article class="bg-white rounded-lg shadow-md overflow-hidden border">
 
   {% if content.field_imagen_destacada %}
     <div>
@@ -6,26 +6,22 @@
     </div>
   {% endif %}
 
-  <h2 class="text-xl font-bold">
-    {{ label }}
-  </h2>
+  <div class="p-4">
 
-  {% if content.field_fecha_inicio %}
-    <div class="text-gray-500 text-sm">
-      {{ content.field_fecha_inicio }}
+    <h2 class="text-xl font-bold mb-2">
+      {{ label }}
+    </h2>
+
+    <div class="text-gray-500 text-sm mb-2">
+      {{ content.field_fecha_de_inicio }}
     </div>
-  {% endif %}
 
-  {% if content.field_categoria %}
-    <div class="text-sm">
-      {{ content.field_categoria }}
-    </div>
-  {% endif %}
+    {% if node.field_destacado.value %}
+      <span class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded">
+        Destacado
+      </span>
+    {% endif %}
 
-  {% if node.field_destacado.value %}
-    <span class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded">
-    Destacado
-  </span>
-  {% endif %}
+  </div>
 
 </article>
