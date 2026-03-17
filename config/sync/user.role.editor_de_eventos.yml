@@ -1,0 +1,21 @@
+uuid: 73de56f2-7ab5-425a-8fc9-b0c7eba8c07c
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.evento
+  module:
+    - media
+    - node
+    - practicasdromen
+id: editor_de_eventos
+label: 'Editor de eventos'
+weight: 4
+is_admin: false
+permissions:
+  - 'administrar eventos'
+  - 'create evento content'
+  - 'create image media'
+  - 'delete any evento content'
+  - 'edit any evento content'

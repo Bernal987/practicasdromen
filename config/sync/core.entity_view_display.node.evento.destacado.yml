@@ -1,8 +1,9 @@
-uuid: 5fbc034b-e13d-4795-af70-2f2e45dcc93d
+uuid: 7f5c0078-9ca4-411c-b3e4-fe95cb9d4ec3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.destacado
     - field.field.node.evento.field_categoria
     - field.field.node.evento.field_descripcion
     - field.field.node.evento.field_destacado
@@ -14,10 +15,10 @@ dependencies:
     - datetime
     - text
     - user
-id: node.evento.default
+id: node.evento.destacado
 targetEntityType: node
 bundle: evento
-mode: default
+mode: destacado
 content:
   field_categoria:
     type: entity_reference_label
@@ -25,33 +26,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   field_descripcion:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
-    region: content
-  field_destacado:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_fecha_de_fin:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 102
+    weight: 3
     region: content
   field_fecha_de_inicio:
     type: datetime_default
@@ -60,7 +42,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_imagen_destacada:
     type: entity_reference_entity_view
@@ -69,12 +51,10 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 104
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
+  field_destacado: true
+  field_fecha_de_fin: true
   langcode: true
+  links: true

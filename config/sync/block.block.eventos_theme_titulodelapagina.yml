@@ -1,0 +1,24 @@
+uuid: 921e80e6-390d-4991-8784-f798b7e1b0ea
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eventos_theme
+id: eventos_theme_titulodelapagina
+theme: eventos_theme
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/*'

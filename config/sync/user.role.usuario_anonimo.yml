@@ -1,0 +1,9 @@
+uuid: 08eea6af-750b-487d-a552-be2cccaead81
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_anonimo
+label: 'Usuario anónimo'
+weight: 6
+is_admin: false
+permissions: {  }

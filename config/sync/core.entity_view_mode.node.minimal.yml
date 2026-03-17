@@ -1,0 +1,11 @@
+uuid: 4a61138c-d159-4f0f-9bfc-de2d27257b3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.minimal
+label: Minimal
+description: null
+targetEntityType: node
+cache: true

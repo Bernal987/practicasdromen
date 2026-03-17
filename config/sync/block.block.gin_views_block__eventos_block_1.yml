@@ -1,0 +1,33 @@
+uuid: 2aa5954f-e1d9-4fe2-b172-2b007438b027
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.eventos
+  module:
+    - language
+    - views
+  theme:
+    - gin
+id: gin_views_block__eventos_block_1
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:eventos-block_1'
+settings:
+  id: 'views_block:eventos-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: 3
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

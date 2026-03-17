@@ -1,0 +1,25 @@
+uuid: 337b4185-cec8-47b6-af36-1c3ef09a2111
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - eventos_theme
+id: eventos_theme_navegacionprincipal
+theme: eventos_theme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

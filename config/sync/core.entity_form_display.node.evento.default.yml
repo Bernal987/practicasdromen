@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.evento.field_categoria
+    - field.field.node.evento.field_descripcion
     - field.field.node.evento.field_destacado
     - field.field.node.evento.field_fecha_de_fin
     - field.field.node.evento.field_fecha_de_inicio
@@ -12,6 +13,7 @@ dependencies:
   module:
     - datetime
     - path
+    - text
 id: node.evento.default
 targetEntityType: node
 bundle: evento
@@ -32,6 +34,16 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_descripcion:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   field_destacado:
     type: boolean_checkbox

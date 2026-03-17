@@ -1,0 +1,9 @@
+uuid: a7729382-edc8-429c-8c1d-10f38fbc223c
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_registrado
+label: 'Usuario registrado'
+weight: 5
+is_admin: false
+permissions: {  }

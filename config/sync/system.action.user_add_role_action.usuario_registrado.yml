@@ -1,0 +1,14 @@
+uuid: ad2ba5fe-c6a2-4b5e-9852-26b60a1993e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_registrado
+  module:
+    - user
+id: user_add_role_action.usuario_registrado
+label: 'Añade el rol Usuario registrado al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: usuario_registrado

@@ -1,0 +1,25 @@
+uuid: 1832dc97-8923-4d2f-add3-057de4aa87d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.eventos
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__eventos_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:eventos-block_1'
+settings:
+  id: 'views_block:eventos-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility: {  }

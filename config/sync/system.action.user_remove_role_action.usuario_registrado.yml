@@ -1,0 +1,14 @@
+uuid: 33b10ef2-7f40-4ca6-b352-ac0214b2ffe9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_registrado
+  module:
+    - user
+id: user_remove_role_action.usuario_registrado
+label: 'Elimina el rol Usuario registrado al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: usuario_registrado
