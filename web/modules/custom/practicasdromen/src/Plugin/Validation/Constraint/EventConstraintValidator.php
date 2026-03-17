@@ -13,6 +13,7 @@ class EventConstraintValidator extends ConstraintValidator {
    * {@inheritdoc}
    */
   public function validate($entity, Constraint $constraint) {
+   if ($entity->getType() !== 'evento'){return;}
     $fechaInicio= $entity->get('field_fecha_de_inicio')->value;
     $fechaFin= $entity->get('field_fecha_de_fin')->value;
     if (empty($fechaInicio)){

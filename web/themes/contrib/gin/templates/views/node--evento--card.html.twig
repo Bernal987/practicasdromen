@@ -1,0 +1,31 @@
+<article class="bg-white rounded-lg shadow-md overflow-hidden">
+
+  {% if content.field_imagen_destacada %}
+    <div>
+      {{ content.field_imagen_destacada }}
+    </div>
+  {% endif %}
+
+  <div class="p-4">
+
+    <h2 class="text-xl font-bold">
+      {{ label }}
+    </h2>
+
+    <div class="text-gray-500 text-sm">
+      {{ content.field_fecha_inicio }}
+    </div>
+
+    <div class="mt-2">
+      {{ content.field_categoria }}
+    </div>
+
+    {% if node.field_destacado.value %}
+      <span class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded mt-2">
+        Destacado
+      </span>
+    {% endif %}
+
+  </div>
+
+</article>
